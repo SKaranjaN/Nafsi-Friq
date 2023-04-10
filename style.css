@@ -159,13 +159,13 @@ nav a:focus {
 	position: relative; top: -300px;
 }
 .banner_center img {
-	color: #fff;
-	font-family: "Lucida Handwriting";
-	text-transform: uppercase;
-	font-size: 8em;
 	position: relative; top: -120px;
 	left: -50px;
 }
+/* .banner-wrap img {
+	width: 800px;
+	height: 700px;
+  } */
 .banner_center h2 {
 	color: #eee;
 	font-family: 'Arvo', serif;
