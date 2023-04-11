@@ -159,8 +159,8 @@ nav a:focus {
 	position: relative; top: -300px;
 }
 .banner_center img {
-	position: relative; top: -120px;
-	left: -50px;
+	position: relative; top: 0px;
+	left: -0px;
 }
 /* .banner-wrap img {
 	width: 800px;
@@ -664,18 +664,20 @@ h2.resp-accordion {
 	float: left;
 	width:27%;
 	margin-right:5%;
-	position: relative; left: -70px;
+	position: relative; left: -0px;
 }
 .about-imag img {
-	border: 2px solid #ef664d;
-	border-radius: 103px;
+	width: 70%;
+    height: 70%;
+    border: 2px solid #ef664d;
+    border-radius: 103px;
 }
 .about-text {
 	float: left;
 	width: 65%;
-	margin-top:3%; 
-	position: relative; top: 100px;
-}
+	margin-top: 3%;
+	margin-right: 40px;
+	margin: 0 auto; /* add this line to center the div horizontally */
 }
 .about-text p {
 	font-size: 20px;
@@ -1428,6 +1430,11 @@ padding-bottom: 2em;
 		}
 	}
 	@media(max-width:375px){
+		#small{
+			display: block !important;
+    		width: 100%;
+   			text-align: right;
+		}
 		.resp-tabs-list {
 		margin: 13px 0;
 		}
