@@ -3,6 +3,66 @@
 <html>
 <head>
 <title>Mwangi's Website</title>
+  <style>
+    /* CSS for slideshow container */
+    .slideshow-container {
+      max-width: 600px;
+      position: relative;
+      margin: auto;
+    }
+
+    /* CSS for slides */
+    .mySlides {
+      display: none;
+    }
+
+    /* CSS for slide images */
+    .mySlides img {
+      width: 100%;
+      height: auto;
+    }
+
+    /* CSS for slide captions */
+    .text {
+      color: #f2f2f2;
+      font-size: 24px;
+      padding: 8px 12px;
+      position: absolute;
+      bottom: 0;
+      width: 100%;
+      text-align: center;
+    }
+
+    /* CSS for previous/next buttons */
+    .prev, .next {
+      cursor: pointer;
+      position: absolute;
+      top: 50%;
+      width: auto;
+      padding: 16px;
+      margin-top: -22px;
+      color: white;
+      font-weight: bold;
+      font-size: 18px;
+      transition: 0.6s ease;
+      border-radius: 0 3px 3px 0;
+      user-select: none;
+    }
+	.prev {
+  left: 0px;
+}
+
+    /* CSS for next button */
+    .next {
+      right: 0;
+      border-radius: 3px 0 0 3px;
+    }
+
+    /* CSS for button hover */
+    .prev:hover, .next:hover {
+      background-color: rgba(0,0,0,0.8);
+    }
+  </style>
 <meta name="viewport" content="width=device-width, initial-scale=1">
 <meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
 <meta name="keywords" content="Onepage Responsive web, Bootstrap Web, Flat Web, Android Compatible web,
@@ -115,7 +175,116 @@ Smartphone Compatible web, free webdesigns for Nokia, Samsung, LG, SonyEricsson,
 	<div class="works-section" id="work" id="work">
 	   <div class="works-header">
 			<h3>works</h3>
-				<p>You can find below a link to download my CV and get to see a bit of what I have been involved in. </p>
+				<p></p>
+		<div class="slideshow-container">
+
+					<!-- Slides -->
+					<div class="mySlides">
+					  <img src="images/slide-1.jpg">
+					  <div class="text"></div>
+					</div>
+				  
+					<div class="mySlides">
+					  <img src="images/slide-2.jpg">
+					  <div class="text"></div>
+					</div>
+				  
+					<div class="mySlides">
+					  <img src="images/slide-3.jpg">
+					  <div class="text"></div>
+					</div>
+
+					<div class="mySlides">
+						<img src="images/slide-4.jpg">
+						<div class="text"></div>
+					  </div>
+
+					  <div class="mySlides">
+						<img src="images/slide-5.jpg">
+						<div class="text"></div>
+					  </div>
+
+					  <div class="mySlides">
+						<img src="images/slide-6.jpg">
+						<div class="text"></div>
+					  </div>
+
+					  <div class="mySlides">
+						<img src="images/slide-7.jpg">
+						<div class="text">His Excellecny Amb. Dr. Ndemo the ambassador to the Kingdom of Belgium and Luxembourg meeting with the Kenyan community in diaspora.</div>
+					  </div>
+
+					  <div class="mySlides">
+						<img src="images/slide-8.jpg">
+						<div class="text"></div>
+					  </div>
+
+					  <div class="mySlides">
+						<img src="images/slide-9.jpg">
+						<div class="text"></div>
+					  </div>
+
+					  <div class="mySlides">
+						<img src="images/slide-10.jpg">
+						<div class="text"></div>
+					  </div>
+
+					  <div class="mySlides">
+						<img src="images/slide-11.jpg">
+						<div class="text"></div>
+					  </div>
+
+					  <div class="mySlides">
+						<img src="images/slide-12.jpg">
+						<div class="text"></div>
+					  </div>
+
+					  <div class="mySlides">
+						<img src="images/slide-13.jpg">
+						<div class="text"></div>
+					  </div>
+
+					  <div class="mySlides">
+						<img src="images/slide-14.jpg">
+						<div class="text"></div>
+					  </div>
+
+				  
+					<!-- Previous/Next buttons -->
+					<a class="prev" onclick="plusSlides(-1)">❮</a>
+					<a class="next" onclick="plusSlides(1)">❯</a>
+				  
+				  </div>
+				  
+				  <script>
+				  var slideIndex = 1;
+				  showSlides(slideIndex);
+				  
+				  // Next/previous controls
+				  function plusSlides(n) {
+					showSlides(slideIndex += n);
+				  }
+				  
+				  // Thumbnail image controls
+				  function currentSlide(n) {
+					showSlides(slideIndex = n);
+				  }
+				  
+				  function showSlides(n) {
+					var i;
+					var slides = document.getElementsByClassName("mySlides");
+					var dots = document.getElementsByClassName("dot");
+					if (n > slides.length) {slideIndex = 1}
+					if (n < 1) {slideIndex = slides.length}
+					for (i = 0; i < slides.length; i++) {
+						slides[i].style.display = "none";
+					}
+					for (i = 0; i < dots.length; i++) {
+						dots[i].className = dots[i].className.replace(" active", "");
+					}
+					slides[slideIndex-1].style.display = "block";
+				  }
+				  </script>
 		</div>
 		<div class="portfolio-section-bottom-row" id="portfolio">
 			<div class="container">
